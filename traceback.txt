@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While parsing C:\Repositories\arangussy\game/script.rpy.
+Exception: Line with id skanussy_3325204c appeared twice, at game/scripts/skanussy.rpy:6 and game/skanussy.rpy:6.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Library\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Library\renpy-8.0.3-sdk\renpy\main.py", line 490, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "C:\Library\renpy-8.0.3-sdk\renpy\script.py", line 297, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Library\renpy-8.0.3-sdk\renpy\script.py", line 809, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "C:\Library\renpy-8.0.3-sdk\renpy\script.py", line 427, in finish_load
+    self.translator.take_translates(all_stmts)
+  File "C:\Library\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 166, in take_translates
+    raise Exception("Line with id %s appeared twice, at %s:%d and %s:%d." %
+Exception: Line with id skanussy_3325204c appeared twice, at game/scripts/skanussy.rpy:6 and game/skanussy.rpy:6.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.3.22090809
+arangussy 1.0
+Sun Apr 23 19:34:28 2023

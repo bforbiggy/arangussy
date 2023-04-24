@@ -1,0 +1,1 @@
+define c = Character("Columbo")
