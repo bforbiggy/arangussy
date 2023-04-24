@@ -1,4 +1,5 @@
 ﻿include "scripts/skanussy.rpy"
+include "scripts/menaceussy.rpy"
 
 define b = Character("Biggy")
 define y = Character("You")
@@ -9,9 +10,11 @@ label start:
 
     call skan_story
     scene bg gondola with Dissolve(2.5)
-    # show biggy smug
-    # b "That sure was a beast of a man huh?"
-    # b "Onto the next one!!!"
-    # y "W-wait! I'm not read-"
+    show biggy smug
+    b "That sure was a beast of a man huh?"
+    b "Onto the next one!!!"
+    y "W-wait! I'm not read-"
+
+    call menace_story
 
     return
